@@ -1,0 +1,93 @@
+:root {
+  --primary-text: #000000;    /* Black for main text */
+  --accent-color: #4169E1;    /* Royal Blue for highlights */
+  --background-color: #F5F5F5; /* Light Gray for background */
+}
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.container {
+   background-color: #000000;
+   margin: 10px;
+   height: 95vh;
+}
+
+.container  h1{
+  font-size: 2rem;
+  text-align: center;
+  padding: 10px;
+  background-color: #4169E1;
+  color: #ffffff;
+}
+.addBtn {
+  position: relative;
+  left: 42%;
+  margin-top: 5px;
+  background-color: var(--background-color);
+  color: #050505;
+  padding: 14px 30px;
+  font-weight: bolder;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px #4169e166;
+  transition: all 0.2s ease;
+}
+
+.addBtn:hover {
+  background-color: var(--accent-color);
+  box-shadow: 0 6px 25px #6a5acd99;
+}
+
+.notes-container {
+  flex-direction: row;
+  height: 400px;
+  margin: 10px;
+  background: #d1bdbd;
+}
+
+.notes-container p{
+  padding: 5px;
+  outline: none;
+  top: 10px;
+  position: relative;
+  height: 20%;
+  margin: 10px;
+  background: #ffffff;
+}
+
+.deleteBtn {
+  position: relative;
+  left: 45%;
+  margin-top: 5px;
+  background-color: var(--background-color);
+  color: #050505;
+  padding: 14px 30px;
+  font-weight: bolder;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px #4169e166;
+  transition: all 0.2s ease;
+}
+
+.deleteBtn:hover {
+  background-color: var(--accent-color);
+  box-shadow: 0 6px 25px #6a5acd99;
+}
+
+.deleteMsg {
+  position: fixed;
+  border-radius: 50px;
+  font-weight: bolder;
+  padding: 10px;
+  background-color: #4169E1;
+  top: 450px;
+  left: 43%;
+}

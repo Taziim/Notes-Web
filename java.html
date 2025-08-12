@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>People Counter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+      background-color: #f0f8ff;
+    }
+
+    .main-box {
+      margin: 20px 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #count {
+      font-size: 40px;
+      margin: 20px 0;
+      display: block;
+    }
+
+    #save-el {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h3>People Entered</h3>
+    <span id="count">0</span>
+    <div class="main-box">
+      <button id="Increment">Increment</button>
+      <button id="Save">Save</button>
+    </div>
+    <div>
+      Previous Entries: <span id="save-el"></span>
+    </div>
+  </div>
+
+  <script>
+        let count = 0;
+    document.getElementById('Increment').addEventListener('click', function(){
+        count = count + 1;
+        const chageCount = document.getElementById("count");
+        chageCount.innerHTML = count;
+    })
+  </script>
+</body>
+</html>
